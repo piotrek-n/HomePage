@@ -26,6 +26,18 @@ textarea {
 /*Inventum*/
 
 .navbar-default {
-    background-color: lightgray;
+    background-color: #eee;
     /*border-color: grey;*/
+}
+
+.v-center {
+    display:table !important;
+    /*border:2px solid gray;*/
+    height:120px;
+}
+
+.content {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
 }
