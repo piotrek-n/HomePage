@@ -23,7 +23,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -85,18 +85,18 @@
                         <!-- Grupowanie elementów menu w celu lepszego wyświetlania na urządzeniach moblinych -->
                         <div class="collapse navbar-default navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a href="#">O Nas</a></li>                                
+                                <li>@Html.ActionLink("O Nas", "Index", "Home")</li>                                
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Aplikacje Internetowe</a></li>
-                                        <li><a href="#">Oprogramowanie Dedykowane</a></li>
-                                        <li><a href="#">Integracja Programowa</a></li>
+                                        <li>@Html.ActionLink("Aplikacje Internetowe", "Index", "Home")</li>
+                                        <li> @Html.ActionLink("Oprogramowanie Dedykowane", "Index", "Home")</li>
+                                        <li>@Html.ActionLink("Integracja Programowa", "Index", "Home")</li>
                                         <li class="divider"></li>
-                                        <li><a href="#">Systemy Autorskie</a></li>
+                                        <li>@Html.ActionLink("Systemy Autorskie", "Index", "Home")</li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Kontakt</a></li>
+                                <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
                             </ul>
                             <div class="col-sm-3 col-md-3 pull-right">
                                 <form class="navbar-form" role="search">
